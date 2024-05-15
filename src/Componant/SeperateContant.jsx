@@ -8,6 +8,7 @@ const SeperateContant = ({ contact}) => {
         <div className="Contact-Detail-Left">
           <div className='Profile-Img'>
             {/* profile image */}
+            <img src={contact.img} alt="" />
           </div>
             <div className='Contact-Detail'>
                 <h3>{contact.name}</h3>

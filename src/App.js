@@ -3,6 +3,7 @@ import AddContact from '../src/Componant/AddContact.jsx';
 import HomePage from './HomePage.jsx';
 import {Routes, Route, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import {ajith} from './Assets/ajith.jpeg';
 
 
 
@@ -14,10 +15,10 @@ const App = () => {
        message:"This is satheesh",   
     },
     {
-      message:"ok, what are you doing",   
+      message:" from kallai",   
     },
     {
-     message:" sorr i didn't understand "
+     message:" 6383591766  "
     }
   ]);
 
@@ -36,13 +37,13 @@ const App = () => {
 
   const [receiveMessage, setReceiveMessage] = useState([
     { 
-      message:"This is Alpha",
+      message:" mr_black",
     },
     {
-      message:"This is satheesh",   
+      message:"mrsatheesh2705@gmail.com",   
    },
    {
-      message:"ok, what a lorem this udkkskn shsihus susu susfu sysfddsJ SAO OUOUDvO V re you doing",   
+      message:"ok, message me",   
   }
   ])
 
@@ -53,49 +54,28 @@ const App = () => {
       id:1,
       name:"SATHEESH",
       number:6383591766,
+      img:"{ajith}",
       desc:"Hi Hello"
     },
     {
       id:2,
       name:"Maithen",
       number:6383591766,
+      img:"",
       desc:"Hi boys"
     },
     {
       id:3,
       name:"rahul v",
       number:6383591766,
-      desc:"Hi girls"
-    },
-    {
-      id:4,
-      name:"kamesh",
-      number:9871367367,
-      desc:"Hi girls"
-    },
-    {
-      id:5,
-      name:"naay dady",
-      number:611520104052,
-      desc:"Hi girls"
-    },
-    {
-      id:6,
-      name:"markka ",
-      number:9543527367,
-      desc:"Hi girls"
-    },
-    {
-      id:7,
-      name:"santo ",
-      number:9543527367,
+      img:"",
       desc:"Hi girls"
     }
   ])
 
   const [contactName, setContactName] = useState('');
   const [contactNumber, setContactNumber] = useState('');
-
+  const  [selectImage, setSelectImage] = useState('');
   const handleSavaContact = (e) => {
       
       e.preventDefault();
@@ -139,6 +119,8 @@ const App = () => {
         getSendMessage={getSendMessage}
         setGetSendMessage={setGetSendMessage}
         
+
+        
       />} />
 
      <Route path='addAccount' 
@@ -148,6 +130,8 @@ const App = () => {
           setContactName={setContactName}
           contactNumber={contactNumber}
           setContactNumber={setContactNumber}
+          selectImage={selectImage}
+          setSelectImage={setSelectImage}
        />} />
      </Routes>
      

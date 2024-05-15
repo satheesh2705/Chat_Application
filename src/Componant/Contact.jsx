@@ -6,7 +6,9 @@ import SeperateContant from './SeperateContant';
 import {Link} from 'react-router-dom'
 
 
-const Contact = ({contactList, searchValue, setSearchValue}) => {
+const Contact = ({contactList, searchValue,     
+                  setSearchValue
+                }) => {
   return (
 
     <div className='Contact'>  

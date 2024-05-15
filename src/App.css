@@ -106,7 +106,7 @@
     height: 500px;
     width: 350px;
     overflow: scroll;
-    background-color: var(--grey);
+    /* background-color: var(--grey); */
     border-radius: 20px;
 }
 
@@ -314,7 +314,8 @@
 .Chat-Box .SenderMessage p{
     background-color: aqua;
     height: fit-content;
-    width: 300px;
+    max-width: 350px;
+    min-width: fit-content;
     border-radius: 7px;
     padding: 10px 20px;  
 }
@@ -322,11 +323,13 @@
 
 .Chat-Box .ReceiverMessage{
     border-radius: 7px;
+    max-width: 350px;
+    min: width 50px;
     padding: 0 7px;
+    display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: start;
-    display: flex;
 }
 
 .Chat-Box .ReceiverMessage p{
@@ -364,28 +367,45 @@
   .login-form  h2{
     text-align: center;
   }
-  .form-group {
-    margin-bottom: 15px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    display: grid;
-    place-items: center;
-}
-  
-  .form-group label {
-    /* display: block; */
-    font-weight: bold;
-    margin-bottom: 5px;
+
+  .selectImg{
+    /* background-color: red; */
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  #slctImg{
+   font-size: 6em;
+   color: #0056b3;
+   cursor: pointer;
+   margin: 0%;
+  }
+
+  .selectImg innput{
+    position: absolute;
+  }
+
+  .InputContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
   }
   
-  .form-group input {
-    width: 80%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  .NumName {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .NumName input{
+    height: 30px;
+    width: 230px;
+    margin: 10px;
+
+
   }
 
   .saveBtn{
@@ -410,8 +430,32 @@
   button:hover {
     background-color: #0056b3;
   }
-  
 
- 
+ .Nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    background-color: var(--grey);
+ } 
+  
+.Nav *{
+    font-weight: 200;
+    font-size: 1.6em;
+    margin: 15px 5px 0 5px;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.Nav *:hover{
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.7s;
+    font-weight: 300;
+}
+
+
 
   

@@ -1,4 +1,4 @@
-
+import  Nav  from '../src/Componant/Nav'
 import Contact from './Componant/Contact'
 import Chat from './Componant/Chat'
 import './App.css';
@@ -11,11 +11,14 @@ const HomePage = ({ contactList , setContactList, serchValue,
   
   return (
     <div className="HomePage">
+
+        <Nav />
         <Contact 
         contactList={contactList}
         setContactList={setContactList}
         serchValue={serchValue}
         setSearchValue={setSearchValue}
+        
         
         />
         <Chat 
