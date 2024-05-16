@@ -54,28 +54,27 @@ const App = () => {
       id:1,
       name:"SATHEESH",
       number:6383591766,
-      img:"{ajith}",
       desc:"Hi Hello"
     },
     {
       id:2,
       name:"Maithen",
       number:6383591766,
-      img:"",
+
       desc:"Hi boys"
     },
     {
       id:3,
       name:"rahul v",
       number:6383591766,
-      img:"",
+      
       desc:"Hi girls"
     }
   ])
 
   const [contactName, setContactName] = useState('');
   const [contactNumber, setContactNumber] = useState('');
-  const  [selectImage, setSelectImage] = useState('');
+  
   const handleSavaContact = (e) => {
       
       e.preventDefault();
@@ -90,15 +89,7 @@ const App = () => {
     }
 
     const [searchValue, setSearchValue] = useState('');
-    const [searchResults, setSearchResults] = useState([]) 
 
-    // useEffect(()  =>{
-    //   const filteredResult = contactList.filter((contact) =>
-    //     ((contact.name).toLowerCase()).includes(searchValue.toLowerCase()) 
-    //   );
-    //   setSearchResults(filteredResult());
-    // }, [contactList, searchValue])
-  
   return(
   <div>
     
@@ -130,8 +121,7 @@ const App = () => {
           setContactName={setContactName}
           contactNumber={contactNumber}
           setContactNumber={setContactNumber}
-          selectImage={selectImage}
-          setSelectImage={setSelectImage}
+          
        />} />
      </Routes>
      
